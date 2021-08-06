@@ -10,14 +10,13 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
 
   constructor(private quizService : QuizService, private router: Router) { }
-
   ngOnInit(): void {
   }
 
-  // SignOut(){
-  //   debugger;
-  //   localStorage.clear();
-  //   clearInterval(this.quizService.timer);
-  //   this.router.navigate(['/register']);
-  // }
+  SignOut(){
+    debugger;
+    localStorage.clear();
+    clearInterval(this.quizService.timer);
+    this.router.navigate(['/register']);
+  }
 }
